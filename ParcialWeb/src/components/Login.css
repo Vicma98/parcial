@@ -1,26 +1,43 @@
 body {
-    background-color: #e0f7fa;
     margin: 0;
-    font-family: 'Poppins', sans-serif;  /* Fuente moderna */
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; 
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/green-park-view.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    filter: blur(2px); 
+    z-index: -1; 
 }
 
 .containerPrincipal {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9); 
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     margin: 50px auto;
     text-align: center;
+    position: relative; 
+    z-index: 1; 
 }
 
 h1 {
-    font-size: 2.5rem;  
-    background: linear-gradient(90deg, #00796b, #26c6da);  
-    background-clip: text;  
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #014b1a, #26daa4);
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    letter-spacing: 2px;  
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
@@ -45,14 +62,16 @@ input {
     gap: 15px;
 }
 
-.btn-login,.btn-register {
-    background-color: #00796b;
+.btn-login, .btn-register {
+    
+    background: linear-gradient(90deg, #014b1a, #26daa4);
     color: white;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     width: 100px;
+    transition: background-color 0.3s ease;
 }
 
 .btn-login:hover, .btn-register:hover {
