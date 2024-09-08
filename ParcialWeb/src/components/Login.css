@@ -62,7 +62,7 @@ input {
     gap: 15px;
 }
 
-.btn-login, .btn-register {
+.btn-login, .btn-register,.btn-back {
     
     background: linear-gradient(90deg, #014b1a, #26daa4);
     color: white;
@@ -74,6 +74,6 @@ input {
     transition: background-color 0.3s ease;
 }
 
-.btn-login:hover, .btn-register:hover {
+.btn-login:hover, .btn-register:hover,.btn-back:hover {
     background-color: #004d40;
 }
