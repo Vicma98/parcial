@@ -61,33 +61,12 @@ export function Login() {
         <div className="containerPrincipal">
             <h1>Login</h1>
             <form className="formulario">
-                <input 
-                    type="email" 
-                    placeholder="Email" 
-                    value={email} 
-                    onChange={(e) => setEmail(e.target.value)} 
-                />
-                <input 
-                    type="password" 
-                    placeholder="Password" 
-                    value={password} 
-                    onChange={(e) => setPassword(e.target.value)} 
-                />
+                <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                
                 <div className="btn-container">
-                    <button 
-                        type="button"
-                        className="btn-login"
-                        onClick={handleLoginClick}
-                    >
-                        LOGIN
-                    </button>
-                    <button 
-                        type="button"
-                        className="btn-register"
-                        onClick={handleRegisterClick}
-                    >
-                        Register
-                    </button>
+                    <button type="button" className="btn-login" onClick={handleLoginClick}>LOGIN</button>
+                    <button type="button" className="btn-register" onClick={handleRegisterClick}>Register</button>
                 </div>
             </form>
         </div>
