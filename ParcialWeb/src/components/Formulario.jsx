@@ -2,7 +2,7 @@ import "../components/Formulario.css"
 export function Formulario(){
 
     return (
-        <div>
+        <div className="containerPrincipal">
             <h1>Login</h1>
             <form className="formulario">
                 <input type="text" />
