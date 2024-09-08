@@ -1,0 +1,60 @@
+body {
+    background-color: #e0f7fa;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;  /* Fuente moderna */
+}
+
+.containerPrincipal {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;  
+    background: linear-gradient(90deg, #00796b, #26c6da);  
+    background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    letter-spacing: 2px;  
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-login,.btn-register {
+    background-color: #00796b;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.btn-login:hover, .btn-register:hover {
+    background-color: #004d40;
+}
