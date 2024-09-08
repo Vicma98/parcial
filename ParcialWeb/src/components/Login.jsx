@@ -35,7 +35,7 @@ export function Login() {
                     showConfirmButton: false,
                     timer: 1500,
                 }).then(() => {
-                    navigate('/productos');  // Redirige a la página de productos
+                    navigate('/productos');  
                 });
             } else {
                 Swal.fire({
@@ -54,7 +54,7 @@ export function Login() {
     };
 
     const handleRegisterClick = () => {
-        navigate('/register');  // Redirige a la página de registro
+        navigate('/register');  
     };
 
     return (

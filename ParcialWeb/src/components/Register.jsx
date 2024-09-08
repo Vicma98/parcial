@@ -39,7 +39,7 @@ export function Register() {
                     showConfirmButton: false,
                     timer: 1500,
                 }).then(() => {
-                    navigate('/login');  // Redirige a la página de login
+                    navigate('/login');  
                 });
             } else {
                 Swal.fire({
@@ -58,52 +58,21 @@ export function Register() {
     };
 
     const handleGoToLogin = () => {
-        navigate('/login');  // Redirige a la página de login
+        navigate('/login');  
     };
 
     return (
         <div className="containerPrincipal">
             <h1>Register</h1>
             <form className="formulario">
-                <input 
-                    type="text" 
-                    placeholder="Name" 
-                    value={name} 
-                    onChange={(e) => setName(e.target.value)} 
-                />
-                <input 
-                    type="text" 
-                    placeholder="Last Name" 
-                    value={lastname} 
-                    onChange={(e) => setLastname(e.target.value)} 
-                />
-                <input 
-                    type="email" 
-                    placeholder="Email" 
-                    value={email} 
-                    onChange={(e) => setEmail(e.target.value)} 
-                />
-                <input 
-                    type="password" 
-                    placeholder="Password" 
-                    value={password} 
-                    onChange={(e) => setPassword(e.target.value)} 
-                />
+                <input  type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
+                <input type="text" placeholder="Last Name" value={lastname} onChange={(e) => setLastname(e.target.value)} />  
+                <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+
                 <div className="btn-container">
-                    <button 
-                        type="button"
-                        className="btn-register"
-                        onClick={handleRegisterClick}
-                    >
-                        REGISTER
-                    </button>
-                    <button 
-                        type="button"
-                        className="btn-register"
-                        onClick={handleGoToLogin}
-                    >
-                        Go to Login
-                    </button>
+                    <button type="button" className="btn-register" onClick={handleRegisterClick}>REGISTER</button>
+                    <button type="button" className="btn-register" onClick={handleGoToLogin}>BACK</button>
                 </div>
             </form>
         </div>
